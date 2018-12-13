@@ -6,6 +6,7 @@ import static org.junit.Assert.*;
 
 public class TreeTest {
 
+    Tree myTree = new Tree();
     @Before
     public void setUp() throws Exception {
     }
@@ -24,6 +25,10 @@ public class TreeTest {
 
     @Test
     public void insert() {
+        TreeTest test = new TreeTest();
+        myTree.insert(0, 5555);
+        //TreeTest val = new TreeTest();
+        assertEquals("GOOD", myTree.find(1, myTree.getRoot()), null);
     }
 
     @Test
